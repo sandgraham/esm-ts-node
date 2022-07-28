@@ -3,7 +3,12 @@
   "name": "esm-ts-node",
   "description": "ESM with TS and Node",
   "type": "module",
+  "scripts": {
+    "clean": "rimraf build/*",
+    "build": "tsc"
+  },
   "dependencies": {
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   },
   "engines": {
